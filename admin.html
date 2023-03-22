@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin</title>
+</head>
+
+<body>
+    <div class="auth">
+        <input type="email" name="email" id="email" placeholder="Email"></input>
+        <input type="pass" name="password" id="password" placeholder="Password"></input>
+        <button id="login" type="button">Log in</button>
+    </div>
+
+
+    <div class="quoteBox hide">
+        <h2 id="text">Content</h2>
+        <input type="text" id="quote"></input>
+        <h2 id="text">Author</h2>
+        <input type="text" id="author"></input>
+        <button id="submit">Submit</button>
+    </div>
+
+    <!-- <div class="error hide">
+        <h1 id="nonuser">Sorry, this user doesnt exist</h1>
+    </div> -->
+
+    <script type="module" src="admin.js"></script>
+</body>
+
+</html>

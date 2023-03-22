@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #CEEDFF;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-box {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+
+    height: 35vh;
+    width: 90vw;
+
+    box-shadow: 5px 5px 10px grey;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p,
+small {
+    font-family: Gupter, sans-serif;
+}
+
+small {
+    font-size: 1.5rem;
+}
+
+.goose {
+    position: absolut;
+    margin-top: -100px;
+    margin-left: -100px;
+    margin-bottom: -100px;
+}
+
+#quote {
+    font-size: 1.9rem;
+    text-align: center;
+    padding: 0px 20px 10px 20px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    #quote {
+        font-size: 1.5rem;
+    }
+}

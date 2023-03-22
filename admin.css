@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #CEEDFF;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 230px;
+}
+
+#email,
+#password {
+    border: none;
+    height: 50px;
+    width: 200px;
+    padding-left: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: Gupter, sans-serif;
+    box-shadow: 5px 5px 10px grey;
+
+}
+
+#email:hover,
+#password:hover,
+#login:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+#login {
+    border-radius: 20px;
+    border: none;
+
+    background-color: white;
+    color: rgb(107, 107, 107);
+
+    box-shadow: 5px 5px 10px grey;
+
+    font-family: Gupter, sans-serif;
+    font-size: 20px;
+
+    width: 120px;
+    height: 50px;
+}
+
+.quoteBox {
+    background-color: white;
+    width: 500px;
+    height: 300px;
+
+    border-radius: 20px;
+
+    box-shadow: 5px 5px 10px grey;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#text {
+    font-family: Gupter, sans-serif;
+    font-size: 30px;
+    color: rgb(107, 107, 107);
+}
+
+#quote {
+    width: 300px;
+    height: 60px;
+}
+
+#quote:hover,
+#author:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+#author {
+    width: 300px;
+    height: 30px;
+}
+
+#submit {
+    background-color: #CEEDFF;
+    color: rgb(107, 107, 107);
+
+    width: 100px;
+    height: 50px;
+
+    border: none;
+
+    font-family: Gupter, sans-serif;
+    font-size: 30px;
+
+    border-radius: 20px;
+}
+
+#submit:hover {
+    background-color: #ace0ff;
+}
+
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "firebase": "^9.16.0"
+  },
+  "name": "daily",
+  "version": "1.0.0",
+  "main": "script.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
