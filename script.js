@@ -33,7 +33,7 @@ get(child(dbRef, "/quotes")).then((snapshot) => {
             displayQuotes(words)
             setInterval(() => {
                 displayQuotes(words)
-            }, 86400000);
+            }, 10000);
         }
 
     } else {
