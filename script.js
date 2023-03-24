@@ -21,18 +21,31 @@ const random = Math.floor(Math.random() * 5) + 1
 
 console.log(random)
 
+let words = []
+
 // Hämtar från databasen och displayer dem
 const dbRef = ref(getDatabase(app));
 get(child(dbRef, "/quotes")).then((snapshot) => {
     if (snapshot.exists()) {
         const data = snapshot.val()
-        console.log(data)
-        console.log(data[19195].author)
-        document.querySelector("#author").innerText = data.author
-        document.querySelector("#quote").innerText = data.content
+        for (const [index, quotes] of Object.entries(data)) {
+            words.push(quotes)
+            displayQuotes(words)
+            setInterval(() => {
+                displayQuotes(words)
+            }, 86400000);
+        }
+
     } else {
         console.log("failed");
     }
 }).catch((error) => {
     console.error(error);
 });
+
+function displayQuotes(quotes) {
+    const random = Math.floor(Math.random() * quotes.length)
+
+    document.querySelector("#author").innerText = quotes[random].author
+    document.querySelector("#quote").innerText = quotes[random].content
+}
